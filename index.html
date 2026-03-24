@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio Jurídico | Inicio</title>
+    <meta
+      name="description"
+      content="Estudio jurídico con atención profesional, cercana y clara. Revisa nuestros servicios y contáctanos."
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Estudio Jurídico</div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav class="site-nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container">
+          <p class="eyebrow">Atención jurídica clara y profesional</p>
+          <h1>Soluciones legales con una presencia seria, simple y confiable</h1>
+          <p class="hero-text">
+            Te orientamos en tus trámites y consultas con un enfoque cercano,
+            preciso y eficiente.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Contactar</a>
+            <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="container">
+          <p class="section-label">Servicios</p>
+          <h2>Nuestros principales servicios</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Asesoría legal</h3>
+              <p>Orientación clara para personas y empresas en materias legales.</p>
+            </article>
+
+            <article class="card">
+              <h3>Redacción de documentos</h3>
+              <p>Preparación y revisión de documentos jurídicos según necesidad.</p>
+            </article>
+
+            <article class="card">
+              <h3>Gestión de trámites</h3>
+              <p>Apoyo en procesos y trámites con seguimiento ordenado.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="section section-alt">
+        <div class="container">
+          <p class="section-label">Proceso</p>
+          <h2>Cómo trabajamos</h2>
+
+          <div class="steps">
+            <div class="step">
+              <span>01</span>
+              <h3>Contacto inicial</h3>
+              <p>Cuéntanos tu caso por formulario, correo o WhatsApp.</p>
+            </div>
+
+            <div class="step">
+              <span>02</span>
+              <h3>Revisión</h3>
+              <p>Evaluamos la consulta y definimos la mejor forma de ayudarte.</p>
+            </div>
+
+            <div class="step">
+              <span>03</span>
+              <h3>Respuesta</h3>
+              <p>Te orientamos con claridad y te indicamos los pasos a seguir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container">
+          <p class="section-label">Contacto</p>
+          <h2>Conversemos</h2>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input id="privacy" name="privacy" type="checkbox" required />
+              <label for="privacy">
+                Acepto el tratamiento de mis datos para fines de contacto.
+              </label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <p class="form-feedback" id="formFeedback"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
